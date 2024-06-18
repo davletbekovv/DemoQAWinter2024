@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Azamat Davletbekov/IdeaProjects/DemoQAwinter24"><classes>
+        <class name="com.demoqa.elements.NambaFoodOrder"><methods><include name="NambaFoodOrderTest"/>
+        </methods></class><class name="com.demoqa.elements.TextBox"><methods>
+        <include name="textBoxTest"/></methods></class><class name="com.demoqa.locators.BasicLocators">
+        <methods>
+            <include name="findByIdTest"/>
+        </methods></class></classes></test></suite>
