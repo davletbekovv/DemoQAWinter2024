@@ -5,7 +5,7 @@ import utils.ConfigReader;
 
 public class ProgressBarTest extends BaseTest {
 
-    @Test(description = "Test progress bar reaches 52% and stops")
+    @Test(groups = {"Smoke" ,"4567"}, description = "Test progress bar reaches 52% and stops")
     public void progressBarTest() throws InterruptedException {
 
         browserHelper.open("https://demoqa.com/progress-bar");

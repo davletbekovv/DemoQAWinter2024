@@ -10,7 +10,7 @@ import utils.ConfigReader;
 import utils.RandomUtils;
 
 public class PracticeFormTest extends BaseTest {
-    @Test
+    @Test(groups = {"Smoke", "1604"}, description = "PracticeForm Test")
     public void practiceFormTest() throws InterruptedException {
         browserHelper.open(ConfigReader.getValue("baseURL")+ Endpoints.PRACTICEFORM.getEndpoint());
 

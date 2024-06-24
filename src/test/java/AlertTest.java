@@ -8,14 +8,13 @@ import utils.ConfigReader;
 import static enums.Endpoints.ALERT;
 
 public class AlertTest extends BaseTest {
-    @Test(groups = {"Smoke", "UI", "1664"}, description = "Alert Test")
-    @Description("Verify that alert is present")
+    @Test(groups = {"E2E_Test", "1664"}, description = "Alert Test")
     @Owner("Azamat")
-    @Tag("Smoke")
+    @Tag("E2E")
     @Severity(SeverityLevel.CRITICAL)
     @Story("GCPINT-8877")
     @Epic("Registration")
-    @Link("www.google.com")
+
 
     void alertTest() throws InterruptedException {
       browserHelper.open(ConfigReader.getValue("baseURL")+ ALERT.getEndpoint());

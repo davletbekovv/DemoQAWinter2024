@@ -6,7 +6,7 @@ import pages.BasePage;
 import utils.ConfigReader;
 
 public class FrameTest extends BaseTest {
-    @Test(description = "Verify that driver can switch to another frame")
+    @Test(groups = {"Regression", "1345"}, description = "Verify that driver can switch to another frame")
     public void frameTest() {
         browserHelper.open(ConfigReader.getValue("baseURL")+ Endpoints.FRAMES.getEndpoint());
         iframeHelper.switchToFrame("frame1");

@@ -3,6 +3,10 @@
 <suite name="Regression Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Azamat Davletbekov/IdeaProjects/DemoQAwinter24">
         <classes>
+
+            <class name="FrameTest"></class>
+            <class name="MenuTest"></class>
+
         </classes>
     </test>
 </suite>

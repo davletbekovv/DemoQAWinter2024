@@ -8,7 +8,7 @@ public class WebTableTest extends BaseTest{
 
     @Test(description = "WebTableTest")
     public void test123() throws Exception {
-        browserHelper.open(ConfigReader.getValue("baseURL"));
+        browserHelper.open("https://demoqa.com/webtables");
         webTablePage.addNewEmployee(randomUtils.createMockEmployee());
         Thread.sleep(4000);
         List<Employee> employees = webTablePage.getEmployeesFromTable();

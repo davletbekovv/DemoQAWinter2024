@@ -8,7 +8,7 @@ import utils.RandomUtils;
 public class TextBoxTest extends BaseTest {
     @Test
     public void textBoxTest() throws InterruptedException {
-        browserHelper.open(ConfigReader.getValue("baseURL"));
+        browserHelper.open("https://demoqa.com/text-box");
         TextBoxEntity textBoxEntity = randomUtils.generateRandomTextBoxEntity();
   textBoxPage.fillUpTextBoxForm(textBoxEntity);
         Thread.sleep(3000);
